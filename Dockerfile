@@ -27,7 +27,7 @@ COPY --link package.json ./
 RUN pnpm install --frozen-lockfile
 
 # Copy application code
-COPY --link . .
+COPY . .
 
 # Final stage for app image
 FROM base
